@@ -15,6 +15,7 @@ body{
     display:flex;
     align-items:center;
     justify-content: center;
+    position: relative;
 }
 
 .quotes-container{}
@@ -41,9 +42,64 @@ body{
     color: #c9a2e1;
     margin: 5px
 }
+ /* block-dividers*/
 
 .block-divider{
     height: 2px;
-    background-color: #48932d;
     width: 75px;
+}
+
+ .block-divider--green{
+     background-color: #48932d;
+ }
+
+ .block-divider--short{
+     width: 35px;
+ }
+
+ .opaque-overlay{
+     position:absolute;
+     top:0;
+     left:0;
+     height:100%;
+     width:100%;
+     background-color: rgba(0,0,0,0.5)
+ }
+
+ /*buttons*/
+
+ .btn--cta{
+     font-weight: bold;
+     border-radius: 20px;
+     width: 130px;
+ }
+
+ .btn--green{
+     color: white;
+     background-color: #31681c;
+     border-color: #48932d
+ }
+
+.btn--green:hover{
+    color: #c9a2e1;
+    background-color: #48932d;
+    border-color: #48932d;
+}
+
+/* navbar */
+.nav-container{
+    position: absolute;
+    top:0;
+    left:0;
+    padding-left:0;
+    padding-right:0;
+    z-index:1;
+}
+
+.navbar{
+    margin-bottom:0;
+    width:100%;
+    border:0;
+    background-color: rgba(0,0,0, 0.25)
+
 }
