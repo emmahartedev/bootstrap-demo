@@ -2,8 +2,21 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container{}
+.alert-container .col-12{
+    padding-left:0;
+    padding-right: 0;
+}
 
+.navalert-container .alert-container{
+    padding-left:0;
+    padding-right: 0;
+}
+.site-wide-alert {
+    border-radius:5px;
+    padding:2px;
+    background-color: #e19e2e;
+    border: #e19e2e;
+}
 .callout-container{
     height:100vh;
     background: url(https://user-images.githubusercontent.com/73528924/97803034-d2cf7880-1c47-11eb-8c79-ffc15186096b.jpg) no-repeat center center fixed; 
@@ -15,18 +28,61 @@ body{
     display:flex;
     align-items:center;
     justify-content: center;
+    margin:0;
+
     position: relative;
 }
 
-.quotes-container{}
+.opaque-overlay{
+     position:absolute;
+     top:0;
+     left:0;
+     height:100%;
+     width:100%;
+     background-color: rgba(0,0,0,0.5)
+ }
 
-.features-container{}
+ /* navbar */
 
+ .navalert-container .row{
+     margin:0;
+     padding:0;
+ }
+.navalert-container{
+    position:absolute;
+    margin:0;
+    top:0;
+    left:0;
+    padding:0;
+    border:0;
+    z-index:1;
+}
+
+.navbar{
+    margin-bottom:0;
+    width:100%;
+    border:0;
+    background-color: rgba(0,0,0, 0.25);
+}
+
+.navbar .navbar-toggler{
+    border:0;
+}
+
+.navbar .navbar-brand{
+    font-weight:bold;
+}
+
+.navbar .navbar-nav a{
+    font-weight:bold;
+}
+
+/*jumbotron*/
 .jumbotron{
     background-color: transparent;
 }
 
-.jumbotron-header{
+.jumbotron h1{
     color: #fff;
     margin-bottom: 30px;
     font-weight:bold;
@@ -38,15 +94,22 @@ body{
     font-style:italic;
 }
 
-.jumbotron >.lead{
+.jumbotron .lead{
     color: #c9a2e1;
-    margin: 5px
+    margin: 25px 0;
 }
+.quotes-container{}
+
+.features-container{}
+
+
  /* block-dividers*/
 
 .block-divider{
     height: 2px;
     width: 75px;
+    border:0;
+    background-color: #444444
 }
 
  .block-divider--green{
@@ -57,14 +120,7 @@ body{
      width: 35px;
  }
 
- .opaque-overlay{
-     position:absolute;
-     top:0;
-     left:0;
-     height:100%;
-     width:100%;
-     background-color: rgba(0,0,0,0.5)
- }
+ 
 
  /*buttons*/
 
@@ -86,20 +142,3 @@ body{
     border-color: #48932d;
 }
 
-/* navbar */
-.nav-container{
-    position: absolute;
-    top:0;
-    left:0;
-    padding-left:0;
-    padding-right:0;
-    z-index:1;
-}
-
-.navbar{
-    margin-bottom:0;
-    width:100%;
-    border:0;
-    background-color: rgba(0,0,0, 0.25)
-
-}
